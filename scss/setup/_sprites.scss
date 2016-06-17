@@ -1,0 +1,334 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$arrow-l-name: 'arrow-l';
+$arrow-l-x: 0px;
+$arrow-l-y: 0px;
+$arrow-l-offset-x: 0px;
+$arrow-l-offset-y: 0px;
+$arrow-l-width: 35px;
+$arrow-l-height: 35px;
+$arrow-l-total-width: 110px;
+$arrow-l-total-height: 92px;
+$arrow-l-image: '../images/sprites.png';
+$arrow-l: (0px, 0px, 0px, 0px, 35px, 35px, 110px, 92px, '../images/sprites.png', 'arrow-l', );
+$arrow-r-name: 'arrow-r';
+$arrow-r-x: 45px;
+$arrow-r-y: 0px;
+$arrow-r-offset-x: -45px;
+$arrow-r-offset-y: 0px;
+$arrow-r-width: 35px;
+$arrow-r-height: 35px;
+$arrow-r-total-width: 110px;
+$arrow-r-total-height: 92px;
+$arrow-r-image: '../images/sprites.png';
+$arrow-r: (45px, 0px, -45px, 0px, 35px, 35px, 110px, 92px, '../images/sprites.png', 'arrow-r', );
+$facebook-dark-name: 'facebook-dark';
+$facebook-dark-x: 70px;
+$facebook-dark-y: 45px;
+$facebook-dark-offset-x: -70px;
+$facebook-dark-offset-y: -45px;
+$facebook-dark-width: 9px;
+$facebook-dark-height: 16px;
+$facebook-dark-total-width: 110px;
+$facebook-dark-total-height: 92px;
+$facebook-dark-image: '../images/sprites.png';
+$facebook-dark: (70px, 45px, -70px, -45px, 9px, 16px, 110px, 92px, '../images/sprites.png', 'facebook-dark', );
+$facebook-light-name: 'facebook-light';
+$facebook-light-x: 0px;
+$facebook-light-y: 76px;
+$facebook-light-offset-x: 0px;
+$facebook-light-offset-y: -76px;
+$facebook-light-width: 9px;
+$facebook-light-height: 16px;
+$facebook-light-total-width: 110px;
+$facebook-light-total-height: 92px;
+$facebook-light-image: '../images/sprites.png';
+$facebook-light: (0px, 76px, 0px, -76px, 9px, 16px, 110px, 92px, '../images/sprites.png', 'facebook-light', );
+$quots-name: 'quots';
+$quots-x: 0px;
+$quots-y: 45px;
+$quots-offset-x: 0px;
+$quots-offset-y: -45px;
+$quots-width: 25px;
+$quots-height: 21px;
+$quots-total-width: 110px;
+$quots-total-height: 92px;
+$quots-image: '../images/sprites.png';
+$quots: (0px, 45px, 0px, -45px, 25px, 21px, 110px, 92px, '../images/sprites.png', 'quots', );
+$twetter-dark-name: 'twetter-dark';
+$twetter-dark-x: 90px;
+$twetter-dark-y: 0px;
+$twetter-dark-offset-x: -90px;
+$twetter-dark-offset-y: 0px;
+$twetter-dark-width: 20px;
+$twetter-dark-height: 16px;
+$twetter-dark-total-width: 110px;
+$twetter-dark-total-height: 92px;
+$twetter-dark-image: '../images/sprites.png';
+$twetter-dark: (90px, 0px, -90px, 0px, 20px, 16px, 110px, 92px, '../images/sprites.png', 'twetter-dark', );
+$twetter-light-name: 'twetter-light';
+$twetter-light-x: 90px;
+$twetter-light-y: 26px;
+$twetter-light-offset-x: -90px;
+$twetter-light-offset-y: -26px;
+$twetter-light-width: 20px;
+$twetter-light-height: 16px;
+$twetter-light-total-width: 110px;
+$twetter-light-total-height: 92px;
+$twetter-light-image: '../images/sprites.png';
+$twetter-light: (90px, 26px, -90px, -26px, 20px, 16px, 110px, 92px, '../images/sprites.png', 'twetter-light', );
+$unquot-name: 'unquot';
+$unquot-x: 35px;
+$unquot-y: 45px;
+$unquot-offset-x: -35px;
+$unquot-offset-y: -45px;
+$unquot-width: 25px;
+$unquot-height: 21px;
+$unquot-total-width: 110px;
+$unquot-total-height: 92px;
+$unquot-image: '../images/sprites.png';
+$unquot: (35px, 45px, -35px, -45px, 25px, 21px, 110px, 92px, '../images/sprites.png', 'unquot', );
+$arrow-l-2x-name: 'arrow-l@2x';
+$arrow-l-2x-x: 0px;
+$arrow-l-2x-y: 0px;
+$arrow-l-2x-offset-x: 0px;
+$arrow-l-2x-offset-y: 0px;
+$arrow-l-2x-width: 70px;
+$arrow-l-2x-height: 70px;
+$arrow-l-2x-total-width: 219px;
+$arrow-l-2x-total-height: 184px;
+$arrow-l-2x-image: '../images/sprites@2x.png';
+$arrow-l-2x: (0px, 0px, 0px, 0px, 70px, 70px, 219px, 184px, '../images/sprites@2x.png', 'arrow-l@2x', );
+$arrow-r-2x-name: 'arrow-r@2x';
+$arrow-r-2x-x: 90px;
+$arrow-r-2x-y: 0px;
+$arrow-r-2x-offset-x: -90px;
+$arrow-r-2x-offset-y: 0px;
+$arrow-r-2x-width: 70px;
+$arrow-r-2x-height: 70px;
+$arrow-r-2x-total-width: 219px;
+$arrow-r-2x-total-height: 184px;
+$arrow-r-2x-image: '../images/sprites@2x.png';
+$arrow-r-2x: (90px, 0px, -90px, 0px, 70px, 70px, 219px, 184px, '../images/sprites@2x.png', 'arrow-r@2x', );
+$facebook-dark-2x-name: 'facebook-dark@2x';
+$facebook-dark-2x-x: 0px;
+$facebook-dark-2x-y: 152px;
+$facebook-dark-2x-offset-x: 0px;
+$facebook-dark-2x-offset-y: -152px;
+$facebook-dark-2x-width: 17px;
+$facebook-dark-2x-height: 32px;
+$facebook-dark-2x-total-width: 219px;
+$facebook-dark-2x-total-height: 184px;
+$facebook-dark-2x-image: '../images/sprites@2x.png';
+$facebook-dark-2x: (0px, 152px, 0px, -152px, 17px, 32px, 219px, 184px, '../images/sprites@2x.png', 'facebook-dark@2x', );
+$facebook-light-2x-name: 'facebook-light@2x';
+$facebook-light-2x-x: 138px;
+$facebook-light-2x-y: 90px;
+$facebook-light-2x-offset-x: -138px;
+$facebook-light-2x-offset-y: -90px;
+$facebook-light-2x-width: 18px;
+$facebook-light-2x-height: 32px;
+$facebook-light-2x-total-width: 219px;
+$facebook-light-2x-total-height: 184px;
+$facebook-light-2x-image: '../images/sprites@2x.png';
+$facebook-light-2x: (138px, 90px, -138px, -90px, 18px, 32px, 219px, 184px, '../images/sprites@2x.png', 'facebook-light@2x', );
+$quots-2x-name: 'quots@2x';
+$quots-2x-x: 0px;
+$quots-2x-y: 90px;
+$quots-2x-offset-x: 0px;
+$quots-2x-offset-y: -90px;
+$quots-2x-width: 49px;
+$quots-2x-height: 42px;
+$quots-2x-total-width: 219px;
+$quots-2x-total-height: 184px;
+$quots-2x-image: '../images/sprites@2x.png';
+$quots-2x: (0px, 90px, 0px, -90px, 49px, 42px, 219px, 184px, '../images/sprites@2x.png', 'quots@2x', );
+$twetter-dark-2x-name: 'twetter-dark@2x';
+$twetter-dark-2x-x: 180px;
+$twetter-dark-2x-y: 0px;
+$twetter-dark-2x-offset-x: -180px;
+$twetter-dark-2x-offset-y: 0px;
+$twetter-dark-2x-width: 39px;
+$twetter-dark-2x-height: 32px;
+$twetter-dark-2x-total-width: 219px;
+$twetter-dark-2x-total-height: 184px;
+$twetter-dark-2x-image: '../images/sprites@2x.png';
+$twetter-dark-2x: (180px, 0px, -180px, 0px, 39px, 32px, 219px, 184px, '../images/sprites@2x.png', 'twetter-dark@2x', );
+$twetter-light-2x-name: 'twetter-light@2x';
+$twetter-light-2x-x: 180px;
+$twetter-light-2x-y: 52px;
+$twetter-light-2x-offset-x: -180px;
+$twetter-light-2x-offset-y: -52px;
+$twetter-light-2x-width: 39px;
+$twetter-light-2x-height: 32px;
+$twetter-light-2x-total-width: 219px;
+$twetter-light-2x-total-height: 184px;
+$twetter-light-2x-image: '../images/sprites@2x.png';
+$twetter-light-2x: (180px, 52px, -180px, -52px, 39px, 32px, 219px, 184px, '../images/sprites@2x.png', 'twetter-light@2x', );
+$unquot-2x-name: 'unquot@2x';
+$unquot-2x-x: 69px;
+$unquot-2x-y: 90px;
+$unquot-2x-offset-x: -69px;
+$unquot-2x-offset-y: -90px;
+$unquot-2x-width: 49px;
+$unquot-2x-height: 42px;
+$unquot-2x-total-width: 219px;
+$unquot-2x-total-height: 184px;
+$unquot-2x-image: '../images/sprites@2x.png';
+$unquot-2x: (69px, 90px, -69px, -90px, 49px, 42px, 219px, 184px, '../images/sprites@2x.png', 'unquot@2x', );
+$spritesheet-width: 110px;
+$spritesheet-height: 92px;
+$spritesheet-image: '../images/sprites.png';
+$spritesheet-sprites: ($arrow-l, $arrow-r, $facebook-dark, $facebook-light, $quots, $twetter-dark, $twetter-light, $unquot, );
+$spritesheet: (110px, 92px, '../images/sprites.png', $spritesheet-sprites, );
+$retina-spritesheet-width: 219px;
+$retina-spritesheet-height: 184px;
+$retina-spritesheet-image: '../images/sprites@2x.png';
+$retina-spritesheet-sprites: ($arrow-l-2x, $arrow-r-2x, $facebook-dark-2x, $facebook-light-2x, $quots-2x, $twetter-dark-2x, $twetter-light-2x, $unquot-2x, );
+$retina-spritesheet: (219px, 184px, '../images/sprites@2x.png', $retina-spritesheet-sprites, );
+
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+$arrow-l-group-name: 'arrow-l';
+$arrow-l-group: ('arrow-l', $arrow-l, $arrow-l-2x, );
+$arrow-r-group-name: 'arrow-r';
+$arrow-r-group: ('arrow-r', $arrow-r, $arrow-r-2x, );
+$facebook-dark-group-name: 'facebook-dark';
+$facebook-dark-group: ('facebook-dark', $facebook-dark, $facebook-dark-2x, );
+$facebook-light-group-name: 'facebook-light';
+$facebook-light-group: ('facebook-light', $facebook-light, $facebook-light-2x, );
+$quots-group-name: 'quots';
+$quots-group: ('quots', $quots, $quots-2x, );
+$twetter-dark-group-name: 'twetter-dark';
+$twetter-dark-group: ('twetter-dark', $twetter-dark, $twetter-dark-2x, );
+$twetter-light-group-name: 'twetter-light';
+$twetter-light-group: ('twetter-light', $twetter-light, $twetter-light-2x, );
+$unquot-group-name: 'unquot';
+$unquot-group: ('unquot', $unquot, $unquot-2x, );
+$retina-groups: ($arrow-l-group, $arrow-r-group, $facebook-dark-group, $facebook-light-group, $quots-group, $twetter-dark-group, $twetter-light-group, $unquot-group, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+$icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+
+.icon-home {
+  @include retina-sprite($icon-home-group);
+}
+*/
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+/*
+The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in SCSS
+
+@include retina-sprites($retina-groups);
+*/
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}

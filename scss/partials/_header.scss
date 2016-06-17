@@ -1,0 +1,269 @@
+.page {
+	margin: 0 auto;
+	width: $width-base;
+	overflow: hidden;
+	background: $white;
+	border-bottom: 1px solid $border;
+	border-top: 1px solid $border;
+	border-radius: 0 9px;
+	box-shadow: 3px 6px 3px 0px rgba(204,204,204,1),
+			-3px 0px 3px 0px rgba(204,204,204,1);
+	
+	@media  all and (max-width: $width-base)	{
+		width: $width-middle;
+	}
+	@media  all and (max-width: $width-middle)	{
+		width: $width-small;
+	}
+	@media  all and (max-width: $width-small)	{
+		width: $width-min;
+	}
+}
+
+// header 
+
+.header {
+	width: 100%;
+	padding: 25px 30px 0 0;
+	background: #fff url(../images/pfad-top.png) no-repeat;
+	@media  all and (max-width: $width-middle)	{
+		padding-right: 0;
+	}
+}
+.logo {
+	display: block;
+	margin-bottom: 15px;
+	float: right;
+	overflow: hidden;
+	@media  all and (max-width: $width-middle)	{
+		margin-left: 225px;
+		float: none;
+	}
+	@media  all and (max-width: $width-small)	{
+		margin-left: 130px;
+		width: 180px;
+		img {
+			height: auto;
+			width: 100%;
+		}
+	}
+}
+$status-colors: (
+	text-grey: $text-grey,
+	green: $green,
+	orange: $orange,
+	blue: $blue,
+);
+.header__menu {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	@media  all and (max-width: $width-middle)	{
+		display: none;
+	}
+	@each $status, $color in $status-colors {
+		&_#{$status} {
+			display: inline-block;
+			position: relative;
+			font-family: $font-menu;
+			font-size: $fontSize-larger;
+			&>a {
+				color: $color;
+				display: block;	
+				padding:  15px 30px;
+				text-decoration: none;
+			}
+			&:hover {
+				color: $white;
+				background: $color;
+				border-radius: 15px;
+				transition: color .3s ease-in-out;
+				&>a{
+					color: $white;
+				}
+				&>.header__menu_dropdown {
+					display: block;
+					background: $color;
+					&:before {
+						position: absolute;
+						top: 13px;
+						left: 50%;
+						transform: translateX(-50%);
+						border-style: solid;
+						border-width: 8px 6px 0 6px;
+						border-color: $color transparent transparent transparent;
+						content: '';
+					}
+				}
+			}
+		}
+	}
+}
+
+.header__menu_dropdown {
+	display: none;
+	position: absolute;
+	top: 46px;
+	left: 0;
+	right: 0;
+	margin: 0;
+	padding: 13px 0 15px;
+	list-style: none;
+	border-radius: 0 0 15px 15px;
+	li {
+		margin: 0 auto;
+		padding: 0;
+		width: 125px;
+		background: rgba(256, 256, 256, .5);
+		&:first-child {
+			padding-top: 10px;
+		}
+		&:last-child {
+			padding-bottom: 10px;
+		}
+		a {
+			color: $text-grey;
+			display: block;	
+			padding: 5px 0 5px 8px;
+			width: 100%;
+			font-family: $font-base;
+			font-size: $fontSize-small+1px;
+			line-height: $lineHeight-base;
+			text-decoration: none;
+			&:hover {
+				background: rgba(256, 256, 256, 1);
+				transition: background .3s ease-in-out;
+			}
+		}
+	}
+}
+
+
+.header__social {
+	float: right;
+	padding-top: 7px;
+	@media  all and (max-width: $width-middle)	{
+		display: none;
+	}
+}
+.header__social a {
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	border-radius: 50%;
+	box-shadow: 0px 2px 2px 0px rgba(204,204,204,1);
+}
+.header__social_faceboock {
+	margin-right: 3px;
+	@include retina-sprite($facebook-light-group);
+    background-position: 8px -65px;
+}
+.header__social_twetter {
+	@include retina-sprite($twetter-light-group);
+	background-position: -84px -16px;
+}
+.header__mobile {
+	display: none;
+	height: 39px;
+	width: 100%;
+	border-top: 1px solid #72a335;
+	background: linear-gradient(to bottom, #8cc446 0%,#92c94a 11%,#b2d883 100%);
+	@media  all and (max-width: $width-middle)	{
+		display: table;
+	}
+	&:hover .header__mobile_menu {
+		display: block;
+	}
+}
+.header__mobile_name {
+	position: relative;
+	display: block;
+	padding: 6px 0 6px 50px;
+	text-transform: uppercase;
+	font-family: $font-base;
+	font-size: $fontSize-large-x;
+	font-weight: 700;
+	color: $white;
+	border-bottom: 1px solid #72a335;
+	text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.53);
+	&:before {
+		position: absolute;
+		top: 4px;
+		left: 25px;
+		content: '≡';
+		font-family: $font-base;
+		font-size: $fontSize-larger;
+		font-weight: 700;
+		color: $white;
+		text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.53);
+	}
+}
+.header__mobile_menu {
+	display: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background: linear-gradient(to bottom, #8cc446 0%,#92c94a 11%,#b2d883 100%);
+	list-style: none;
+	li {
+		padding: 5px 0;
+		height: 40px;
+		width: 100%;
+		border-bottom: 1px solid #72a335;
+		a {
+			padding-left: 50px;
+			text-transform: uppercase;
+			font-family: $font-base;
+			font-size: $fontSize-large-x;
+			font-weight: 700;
+			color: $white;
+			text-decoration: none;
+			text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.53);
+			&:hover {
+				color: $text-grey;
+				transition: color .3s ease-in-out;
+			}
+		}
+	}
+}
+.header__mobile_dropdown {
+	display: none;
+	position: absolute;
+    left: 200px;
+    top: 0px;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+    background: linear-gradient(to bottom, #8cc446 0%,#92c94a 11%,#b2d883 100%);
+	list-style: none;
+	border-radius: 15px;
+	overflow: hidden;
+    @media  all and (max-width: $width-small)	{
+		left: 150px;
+    	top: 40px;
+	}
+    li a {
+    	padding-right: 20px;
+    	padding-left: 20px;
+    }
+}
+.mobile__dropdown_link {
+	position: relative;
+	&:before {
+		position: absolute;
+		top: 0;
+		left: 25px;
+		content: '+';
+		font-family: $font-base;
+		font-size: $fontSize-larger;
+		font-weight: 700;
+		color: $white;
+		text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.53);
+	}
+	&:hover .header__mobile_dropdown {
+		display: block;
+
+	}
+}

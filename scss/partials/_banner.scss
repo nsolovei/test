@@ -1,0 +1,39 @@
+//banner
+
+.banner {
+	position: relative;
+	width: 100%;
+	background: $white;
+	z-index: 99;
+	@media  all and (max-width: $width-small)	{
+		display: none;
+	}
+}
+.slick-arrow {
+	position: absolute;
+	height: 35px;
+	width: 35px;
+	border-radius: 50%;
+	outline: none;
+	border: none;
+	box-shadow: none;
+	text-indent: -9999;
+	background: transparent;
+	font-size: 0px;
+	color: transparent;
+	&:hover {
+		opacity: .7;
+		transition: opacity .3s ease-in-out;
+	}
+}
+.slick-prev {
+	right: 65px;
+	bottom: 20px; 
+	z-index: 10;
+	@include retina-sprite($arrow-l-group);
+}
+.slick-next {
+	right: 20px;
+	bottom: 20px; 
+	@include retina-sprite($arrow-r-group);
+}

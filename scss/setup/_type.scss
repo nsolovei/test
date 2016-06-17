@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'SegoePrint-Bold';
+  src: url('../fonts/SegoePrint-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/SegoePrint-Bold.woff') format('woff'), url('../fonts/SegoePrint-Bold.ttf')  format('truetype'), url('../fonts/SegoePrint-Bold.svg#SegoePrint-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//FONT FAMILIES
+$font-base: 'Ubuntu', Arial, sans-serif;
+$font-menu: 'Advent Pro', Arial, sans-serif;
+$font-news: 'Unkempt', Arial, sans-serif;
+$font-quote: 'euphemiaregular', Arial, sans-serif;
+$font-quote-link: 'SegoePrint-Bold', Arial, sans-serif;
+
+
+
+//FONT SIZES
+$fontSize-base: 11px;
+$fontSize-smallest: 12px;
+$fontSize-smaller: 14px;
+$fontSize-small: 16px;
+$fontSize-middle: 18px;
+$fontSize-large: 21px;
+$fontSize-large-x: 25px;
+$fontSize-larger: 28px;
+
+//LINE HEIGHTS
+$lineHeight-base: 1;
+$lineHeight-tightest: 1.2;
+$lineHeight-tight: 1.4;

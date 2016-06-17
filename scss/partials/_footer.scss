@@ -1,0 +1,45 @@
+//footer
+
+.bottom {
+	margin: auto;
+	padding-top: 25px;
+	width: 930px;
+	@media  all and (max-width: $width-base)	{
+		display: none;
+	}
+}
+.bottom__nav {
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	li {
+		display: inline-block;
+		margin: 0;
+		padding: 0 5px;
+		border-right: 1px solid $text-grey;
+		&:last-child {
+			border-right: none;
+		}
+		a {
+			font-weight: 500;
+			font-family: $font-base;
+			font-size: $fontSize-base;
+			color: $text-grey;
+			text-decoration: none;
+			&:hover {
+				color: $black;
+				transition: color .3s ease-in-out;
+			}
+		}
+	}
+}
+.bottom__copyrite {
+	float: right;
+	width: 170px;
+	font-weight: 500;
+	font-family: $font-base;
+	font-size: $fontSize-base;
+	color: $text-grey;
+	line-height: $lineHeight-tight;
+}

@@ -1,0 +1,207 @@
+//quote
+
+.quote {
+	padding: 0 30px 52px 30px;
+	background: $white url(../images/pfad.png) no-repeat;
+	background-position: 100% 100%;
+	@media  all and (max-width: $width-base) {
+		background-image: none;
+		padding-bottom: 0; 
+	}
+	@media  all and (max-width: $width-small)	{
+		padding: 0;
+	}
+}
+.quote__wrap {
+	padding-top: 20px;
+	width: 100%;
+	border: 2px solid $border;
+	border-radius: 15px;
+	background: $grey-bg-block url(../images/butterfly-big.png) right 30px top 15px no-repeat, 
+				url(../images/butterfly-middle.png) right 50px top 95px no-repeat,
+				url(../images/butterfly-min.png) right 60px top 145px no-repeat,;
+	background-color: $grey-bg-block;
+	@media  all and (max-width: $width-middle) {
+			background: $grey-bg-block url(../images/butterfly-big.png) right 5px top 15px no-repeat, 
+				url(../images/butterfly-middle.png) right 20px top 95px no-repeat,
+				url(../images/butterfly-min.png) right 40px top 145px no-repeat,;
+	}
+	@media  all and (max-width: $width-small)	{
+		border-radius: 0;
+	}
+}
+.quote__left {
+	float: left;
+	padding-top: 15px;
+	width: 270px;
+	text-align: center;
+	@media  all and (max-width: $width-base) {
+		width: 185px;
+	}
+	@media  all and (max-width: $width-middle) {
+		width: 115px;
+	}
+	@media  all and (max-width: $width-small)	{
+		float: none;
+		margin: auto;
+		padding-bottom: 5px;
+	}
+	a {
+		font-weight: 700;
+		font-family: $font-quote-link;
+		font-size: $fontSize-large;
+		font-style: italic;
+		color: $green;
+		@media  all and (max-width: $width-base) {
+			font-size: $fontSize-middle;
+		}
+		@media  all and (max-width: $width-middle) {
+			font-size: $fontSize-smallest;
+		}
+
+		&:hover {
+			color: $green/1.5;
+			transition: color .3s ease-in-out;
+		}
+	}
+	img {
+		display: block;
+		padding-top: 20px;
+		margin: auto;
+	}
+}
+.quote__right {
+	float: right;
+	margin-right: 120px;
+	width: 450px;
+	@media  all and (max-width: $width-base) {
+		margin-right: 65px;
+	}
+	@media  all and (max-width: $width-middle) {
+		margin-right: 25px;
+		width: 380px;
+	}
+	@media  all and (max-width: $width-small)	{
+		float: none;
+		margin: auto;
+		width: 310px;
+	}
+}
+.quote__right_quote {
+	position: relative;
+	margin: 0;
+	padding: 25px 20px 20px 25px;
+	font-weight: 400;
+	font-family: $font-base;
+	font-size: $fontSize-smaller;
+	font-style: italic;
+	line-height: $lineHeight-tight;
+	color: $text-grey;
+	background: $light-orange;
+	border-radius: 10px;
+	@media  all and (max-width: $width-small)	{
+		font-size: $fontSize-base;
+	}
+	&:before {
+		position: absolute;
+		content: '';
+		left: -10px;
+		top: -10px;
+		@include retina-sprite($quots-group);
+		@media  all and (max-width: $width-middle) {
+			left: 0;
+			top: 0;
+		}
+	}
+	&:after {
+		position: absolute;
+		content: '';
+		right: -10px;
+		bottom: -10px;
+		@include retina-sprite($unquot-group);
+		@media  all and (max-width: $width-middle) {
+			right: 0;
+			bottom: 0;
+		}
+	}
+}
+.quote__right_author {
+	margin: 0;
+	padding: 15px 0 15px 25px;
+	font-weight: 400;
+	font-family: $font-base;
+	font-size: $fontSize-smaller;
+	color: $text-grey;
+	@media  all and (max-width: $width-small)	{
+		font-size: $fontSize-base;
+	}
+}
+.footer {
+	display: none;
+	@media  all and (max-width: $width-base) {
+		display: block;
+		margin: auto;
+		padding-top: 50px;
+		width: 100%;
+		background: url(../images/pfad.png) no-repeat;
+		background-position: 100% 100%;
+		opacity: .7;
+		z-index: 20;
+	}
+	@media  all and (max-width: $width-small)	{
+		padding-top: 15px;
+		text-align: center;
+	}
+}
+.footer__nav {
+	float: left;
+	margin: 0;
+	padding-top: 15px;
+	list-style: none;
+	@media  all and (max-width: $width-small)	{
+		float: none;
+		margin: auto;
+		padding: 0;
+	}
+	li {
+		display: inline-block;
+		margin: 0;
+		padding: 0 5px;
+		border-right: 1px solid $text-grey;
+		&:last-child {
+			border-right: none;
+		}
+		a {
+			font-weight: 500;
+			font-family: $font-base;
+			font-size: $fontSize-base;
+			color: $text-grey;
+			text-decoration: none;
+			@media  all and (max-width: $width-base) {
+				color: $black;
+			}
+			&:hover {
+				color: $black;
+				transition: color .3s ease-in-out;
+				@media  all and (max-width: $width-base) {
+					color: $text-grey;
+				}
+			}
+		}
+	}
+}
+.footer__copyrite {
+	float: right;
+	margin: 0 30px 15px 0;
+	width: 170px;
+	font-weight: 500;
+	font-family: $font-base;
+	font-size: $fontSize-base;
+	line-height: $lineHeight-tight;
+	color: $black;
+	@media  all and (max-width: $width-small)	{
+		float: none;
+		margin: auto;
+		padding: 10px 0;
+	}
+}
